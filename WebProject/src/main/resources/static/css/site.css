@@ -1,0 +1,16 @@
+h1{
+    color: purple;
+}
+p{
+    font-size: 30px;
+    color: red;
+}
+.card{
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+
+    position: relative;
+    left: 0;
+}
