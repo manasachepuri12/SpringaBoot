@@ -14,3 +14,21 @@ p{
     position: relative;
     left: 0;
 }
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    border: 1px solid #000000;
+    background-color: #7a0909;
+    padding: 10px;
+}
+.navbar a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px;
+}
+.navbar a:hover{
+    background-color: rgb(147, 84, 84);
+    padding: 10px;
+}
