@@ -1,5 +1,5 @@
 function displayUser(user) {
-    document.getElementById("userImage").src = user.image;
+    document.getElementById("userImage").src = user.image || "";
     document.getElementById("userName").textContent = user.name;
     document.getElementById("userGender").textContent = user.gender;
 }
@@ -29,3 +29,4 @@ function getAndDisplayNextRandomUser() {
 }
 
 getAndDisplayNextRandomUser();
+window.getAndDisplayNextRandomUser = getAndDisplayNextRandomUser;
