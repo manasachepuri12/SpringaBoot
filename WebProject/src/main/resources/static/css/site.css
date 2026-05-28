@@ -1,11 +1,11 @@
 h1{
-    color: purple;
+    color: rgb(0, 0, 0);
 }
 p{
     font-size: 30px;
-    color: red;
+    color: rgb(0, 0, 0);
 }
-.card{
+/* .card{
     width: 300px;
     border: 1px solid #ccc;
     padding: 15px;
@@ -13,10 +13,11 @@ p{
 
     position: relative;
     left: 0;
-}
+} */
 body{
     margin: 0px;
     padding: 0px;
+    background-color: rgba(51, 88, 150, 0.417);
 }
 .navbar{
     border: 1px solid #000000;
@@ -30,5 +31,4 @@ body{
 }
 .navbar a:hover{
     background-color: rgb(111, 91, 152);
-    padding: 10px;
 }

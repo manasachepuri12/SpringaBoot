@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random User</title>
+
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/card.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="card.html">Card</a>
+        <a href="toggle.html">Toggle</a>
+        <a href="randomuser.html">Random User</a>
+    </div>
+
+    <div class="card">
+        <img id="userImage" src="" alt="Random User">
+
+        <div class="container">
+            <h2 id="userName">Loading...</h2>
+            <p id="userGender">Loading...</p>
+
+            <button onclick="getAndDisplayNextRandomUser()">
+                Next Random User
+            </button>
+        </div>
+    </div>
+
+    <script src="js/randomuser.js"></script>
+
+</body>
+</html>
