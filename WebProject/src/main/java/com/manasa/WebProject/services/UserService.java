@@ -11,8 +11,8 @@ public class UserService {
 
     public UserService() {
         allUsers = new ArrayList<>();
-        allUsers.add(new User("John", "Male", "img/john.png", 0));
-        allUsers.add(new User("Jane", "Female", "img/jane.png", 1));
+        allUsers.add(new User("Arun", "Male", "img/john.png", 0));
+        allUsers.add(new User("Manasa", "Female", "img/jane.png", 1));
     }
 
     public List<User> getAllUsers() {

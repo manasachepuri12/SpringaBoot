@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Toggle Card</title>
+    <title>Random User</title>
+
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/card.css">
 </head>
@@ -17,17 +18,20 @@
     </div>
 
     <div class="card">
-        <img id="userImage" src="img/john.png" alt="User Image">
+        <img id="userImage" src="" alt="Random User">
 
-        <div class="container">
-            <h2 id="userName">John</h2>
-            <p id="userGender">Male</p>
+        <img id="userImage" width="150" alt="Random User">
 
-            <button onclick="toggleUser()">Toggle User</button>
-        </div>
+<h2 id="userName">Loading...</h2>
+
+<p id="userGender">Loading...</p>
+
+<button onclick="getAndDisplayNextRandomUser()">
+    Next Random User
+</button>
     </div>
 
-    <script src="js/toggle.js"></script>
+    <script src="js/myrandomuser.js"></script>
 
 </body>
 </html>

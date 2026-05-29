@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.manasa.WebProject.model.User;
 import com.manasa.WebProject.services.UserService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
