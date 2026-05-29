@@ -4,24 +4,22 @@ function displayUser(user) {
     document.getElementById("userGender").textContent = user.gender;
 }
 
+let currentIndex = 0;
+
 function getAndDisplayNextRandomUser() {
     fetch("http://localhost:8080/api/users")
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(data) {
+        .then(response => response.json())
+        .then(data => {
 
-            var randomIndex = Math.floor(Math.random() * data.length);
-var userData = data[randomIndex];
+            currentIndex = (currentIndex + 1) % data.length;
 
-            var myUserObject = {};
-            myUserObject.name = userData.name;
-            myUserObject.gender = userData.gender;
-            myUserObject.image = "http://localhost:8080/" + userData.img;
-            displayUser(myUserObject);
-        })
-        .catch(function(err) {
-            console.log("ERROR " + err);
+            var userData = data[currentIndex];
+
+            displayUser({
+                name: userData.name,
+                gender: userData.gender,
+                image: "http://localhost:8080/" + userData.image
+            });
         });
 }
 
